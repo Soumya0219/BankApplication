@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction Page</title>
+</head>
+<body bgcolor="#fffaf0"><br><br>
+<div style="text-align: center;">
+    <div style="margin-left: 800px;">
+        <a href="welcome.html" style="font-size: 20px; text-decoration: none;">Home</a> &nbsp;&nbsp;
+        <a href="account.html" style="font-size: 20px; text-decoration: none;">My Account</a>&nbsp;&nbsp;&nbsp;
+        <a href="index.html" style="font-size: 20px; text-decoration: none;">Logout</a>
+    </div>
+    <h1>Transaction Report</h1>
+    <form action="./transaction" method="GET">
+        <input type="text" name="Account_No" placeholder="Account Number" required><br><br>
+        <input type="text" name="name" placeholder="Enter name" required><br><br>
+        <label for="cash">Select Type</label>
+        <select name="cash" id="cash" required>
+            <option value="Deposit">Deposit</option>
+            <option value="Withdraw">Withdraw</option>
+        </select><br><br>
+        <input type="text" name="Amount" placeholder="Enter Amount" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

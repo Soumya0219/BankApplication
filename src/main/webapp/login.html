@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Application Form</title>
+</head>
+<body bgcolor="#fffaf0"><br><br>
+<div style="text-align: center;">
+    <h1>Login Page</h1>
+<script>
+    function validateform(){
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+
+        if(name == null || name == ""){
+            alert("Name is required");
+            return false;
+        } else if(password == null || password == ""){
+            alert("Password is required");
+            return false;
+        }
+    }
+</script>
+    <form action="./login" method="GET" onsubmit="return validateform()">
+        <input type="text" name="name" id="name" placeholder="Enter Username"><br><br>
+        <input type="password" name="password" id="password" placeholder="Enter Password"><br><br>
+        <input type="submit" value="Login">
+
+    </form>
+
+</div>
+</body>
+</html>

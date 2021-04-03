@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+</head>
+<body bgcolor="#fffaf0"><br><br>
+<div style="text-align: center">
+<h1>User Registration Form</h1><br>
+    <script>
+        function validateform(){
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+            var confirm_password = document.getElementById("confirm_password").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var dateOfBirth = document.getElementById("dateOfBirth").value;
+            var gender = document.getElementById("gender").value;
+            var address = document.getElementById("address").value;
+
+            if(name == null || name == "") {
+                alert("Name is required");
+                return false;
+            } else if(password == null || password == "") {
+                alert("Password is required");
+                return false;
+            } else if(confirm_password == null || confirm_password == "") {
+                alert("confirm password is required");
+                return false;
+            } else if(email == null || email == "") {
+                alert("Email is required");
+                return false;
+            } else if(phone == null || phone == "") {
+                alert("Phone is required");
+                return false;
+            } else if(dateOfBirth == null || dateOfBirth == "") {
+                alert("DOB is required");
+                return false;
+            } else if(gender == null || gender == "") {
+                alert("Gender is required");
+                return false;
+            } else if(address == null || address == "") {
+                alert("Address is required");
+                return false;
+            } else if (password.length < 6) {
+                alert("Password must be atleast 6 characters")
+                return false;
+            } else if (password != confirm_password) {
+                alert("Password and Confirm password must be same")
+                return false;
+            } else if (phone.length != 10) {
+                alert("Phone must be 10 characters")
+                return false;
+            }
+
+        }
+    </script>
+<form name="register" action="./register" method="GET" onsubmit="return validateform()">
+    <input type="text" name="name" id="name" placeholder="User Name" ><br><br>
+    <input type="password" name="password" id="password" placeholder="Enter password" ><br><br>
+    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm password" ><br><br>
+    <input type="email" name="email" id="email" placeholder="Enter Email" ><br><br>
+    <input type="number" name="phone" id="phone" placeholder="Phone number" ><br><br>
+    <input type="date" name="dateOfBirth" id="dateOfBirth" placeholder="DOB" ><br><br>
+    <label for="gender">Select Gender</label>
+        <select name="gender" id="gender" >
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="others">Others</option>
+        </select><br><br>
+    <input type="text" name="address" id="address" placeholder="Enter Address" ><br><br>
+    <input type="submit" value="submit">
+</form>
+</div>
+
+</body>
+</html>

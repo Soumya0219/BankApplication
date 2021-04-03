@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Maven: javax:javaee-web-api:8.0.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/8.0.1/javaee-web-api-8.0.1.jar!/" />
+      <root url="jar://F:/hibernate jar files/ojdbc14_g.jar!/" />
+      <root url="jar://F:/hibernate jar files/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Tomcat/jarfiles/mysql-connector-java-3.1.13-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

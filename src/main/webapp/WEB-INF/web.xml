@@ -1,0 +1,37 @@
+<web-app>
+    <servlet>
+        <servlet-name>first</servlet-name>
+        <servlet-class>com.example.UserRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>first</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>second</servlet-name>
+        <servlet-class>com.example.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>second</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>third</servlet-name>
+        <servlet-class>com.example.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>third</servlet-name>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>four</servlet-name>
+        <servlet-class>com.example.TransactionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>four</servlet-name>
+        <url-pattern>/transaction</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

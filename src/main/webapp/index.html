@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Of India</title>
+</head>
+<body bgcolor="#ffffe0">
+<div style="text-align: center"/>
+<h1>Bank Of India</p><br><br>
+</h1>
+<script>
+    function validateform(){
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+
+        if(name == null || name == ""){
+            alert("Name is required");
+            return false;
+        } else if(password == null || password == ""){
+            alert("Password is required");
+            return false;
+        }
+    }
+</script>
+<div style="text-align: right"/>
+<h4>Login</h4>
+<form action="./login.html" method="GET" onsubmit="return validateform()">
+    <input type="text" name="name" id="name" placeholder="Enter Username" ><br><br>
+    <input type="password" name="password" id="password" placeholder="Enter Password"><br><br>
+    <input type="submit" value="Login">&nbsp;&nbsp;
+    <a href="register.html" input type="submit" value="Register">Register</a><br><br>
+</form>
+</div>
+</body>
+</html>
